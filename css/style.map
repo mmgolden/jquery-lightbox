@@ -1,0 +1,22 @@
+{
+	"version": 3,
+	"file": "../scss/style.css",
+	"sources": [
+		"../scss/style.scss",
+		"../scss/components/_index.scss",
+		"../scss/components/_gallery.scss",
+		"../scss/components/_image.scss",
+		"../scss/components/_overlay.scss",
+		"../scss/components/_buttons.scss"
+	],
+	"sourcesContent": [
+		"// Global imports\n@import 'components/index';",
+		"// Partial imports\n@import 'gallery',\n        'image',\n        'overlay',\n        'buttons';",
+		"/************************ Gallery ************************/\n#gallery {\n  padding-top: 40px;\n  @media screen and (min-width: 991px) {\n    padding: 60px 30px 0 30px;\n  }\n}",
+		"/************************ Image ************************/\n.img-wrapper {\n  position: relative;\n  margin-top: 15px;\n  img {\n    width: 100%;\n  }\n}\n.img-overlay {\n  background: rgba(0,0,0,0.7);\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  top: 0;\n  left: 0;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  opacity: 0;\n  i {\n    color: #fff;\n    font-size: 3em;\n  }\n}",
+		"/************************ Overlay ************************/\n#overlay {\n  background: rgba(0,0,0,0.7);\n  width: 100%;\n  height: 100%;\n  position: fixed;\n  top: 0;\n  left: 0;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  z-index: 999;\n  // Removes blue highlight\n  -webkit-user-select: none;\n  -moz-user-select: none;    \n  -ms-user-select: none; \n  user-select: none; \n  img {\n    margin: 0;\n    width: 80%;\n    height: auto;\n    object-fit: contain;\n    padding: 5%;\n    @media screen and (min-width:768px) {\n        width: 60%;\n    }\n    @media screen and (min-width:1200px) {\n        width: 50%;\n    }\n  }\n}",
+		"/************************ Buttons ************************/\n#nextButton {\n  color: #fff;\n  font-size: 2em;\n  transition: opacity 0.8s;\n  &:hover {\n    opacity: 0.7;\n  }\n  @media screen and (min-width:768px) {\n    font-size: 3em;\n  }\n}\n\n#prevButton {\n  color: #fff;\n  font-size: 2em;\n  transition: opacity 0.8s;\n  &:hover {\n    opacity: 0.7;\n  }\n  @media screen and (min-width:768px) {\n    font-size: 3em;\n  }\n}\n\n#exitButton {\n  color: #fff;\n  font-size: 2em;\n  transition: opacity 0.8s;\n  position: absolute;\n  top: 15px;\n  right: 15px;\n  &:hover {\n    opacity: 0.7;\n  }\n  @media screen and (min-width:768px) {\n    font-size: 3em;\n  }\n}"
+	],
+	"mappings": "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",
+	"names": []
+}
